@@ -1,0 +1,10 @@
+<html>
+<body>
+	<h1>Countries of the world guesser</h1>
+	<a href="/guess/">Click here to start guessing countries</a>
+	<h2>Click a country below to see a heatmap of guesses</h2>
+	{{range .}}
+		<a href="/viz/{{.}}">{{.}}</a><br>
+	{{end}}
+</body>
+</html>
